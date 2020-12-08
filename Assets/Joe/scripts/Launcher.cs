@@ -4,18 +4,42 @@ using UnityEngine;
 
 public class Launcher : MonoBehaviour
 {
+    static int aliveBall = 0;
+    //fields set in unity pane
+    [Header("Set in Inspector")]
+    public GameObject pinball;
+    public GameObject launchPoint;
+
+
+    //fields set dynamically
     [Header("Set Dynamically")]
-    public Vector3 originalPos;
-    public GameObject block;
-    // Start is called before the first frame update
-    void Start()
+    public float velocityMult = 20f;
+
+    public void Start()
     {
-        originalPos = block.transform.position;
+        aliveBall = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.DownArrow) && aliveBall == 0 && velocityMult < 60f)
+        {
+            velocityMult += 20;
+            print(velocityMult);
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && aliveBall == 0 && velocityMult > 20f)
+        {
+            velocityMult -= 20;
+            print(velocityMult);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+            launchBall();
+
+    }
+
+    void launchBall()
+    {
+        print("hello");
     }
 }
