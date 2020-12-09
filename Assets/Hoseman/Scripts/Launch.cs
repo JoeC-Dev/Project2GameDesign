@@ -46,7 +46,7 @@ public class Launch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             clone = Instantiate(pebble, new Vector3(target.position.x, target.position.y, target.position.z), Quaternion.identity);
-            clone.velocity = new Vector3(0, -30, -200);
+            clone.velocity = new Vector3(0, 0, -50 * i);
         }
     }
 }
