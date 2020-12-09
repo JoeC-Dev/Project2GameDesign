@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightWhenHit : MonoBehaviour
 {
-    [Header("Set in Inspector")]
+    //[Header("Set in Inspector")]
     public GameObject mushLight;
 
     void OnTriggerEnter(Collider other)
@@ -16,7 +16,7 @@ public class LightWhenHit : MonoBehaviour
         
     }
 
-    private void Update()
+    void FixedUpdate()
     {
         if (mushLight.activeSelf)
             mushLight.SetActive(false);
