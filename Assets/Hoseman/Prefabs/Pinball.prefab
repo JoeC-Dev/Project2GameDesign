@@ -916,6 +916,7 @@ GameObject:
   - component: {fileID: 2860779658884540263}
   - component: {fileID: 7555393809184429498}
   - component: {fileID: 2136960873006210202}
+  - component: {fileID: 7126256088870368029}
   m_Layer: 0
   m_Name: BotLeftCurve
   m_TagString: Untagged
@@ -992,11 +993,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5874247695049438653}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7126256088870368029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5874247695049438653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ec9b695c5d42344b36c77743149cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: -90
+  y: 0
+  z: -90
 --- !u!1 &6267749853066425836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1025,7 @@ GameObject:
   - component: {fileID: 6756524490288122360}
   - component: {fileID: 4893173567915219100}
   - component: {fileID: 1266320663642456620}
+  - component: {fileID: 8461430658344985712}
   m_Layer: 0
   m_Name: TopRightCurve
   m_TagString: Untagged
@@ -1085,11 +1102,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6267749853066425836}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8461430658344985712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6267749853066425836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ec9b695c5d42344b36c77743149cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 90
+  y: 0
+  z: 0
 --- !u!1 &8335008709605578377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,6 +1134,7 @@ GameObject:
   - component: {fileID: 8647620724318303020}
   - component: {fileID: 4096967462514840089}
   - component: {fileID: 4593862999586336712}
+  - component: {fileID: 5065492169008273946}
   m_Layer: 0
   m_Name: TopLeftCurve
   m_TagString: Untagged
@@ -1178,11 +1211,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8335008709605578377}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5065492169008273946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8335008709605578377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ec9b695c5d42344b36c77743149cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: -90
+  y: 0
+  z: 90
 --- !u!1 &9040392453634252067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,6 +1243,7 @@ GameObject:
   - component: {fileID: 6467767488802519709}
   - component: {fileID: 7390480943585584998}
   - component: {fileID: 5277830820445467779}
+  - component: {fileID: 2569543817623495669}
   m_Layer: 0
   m_Name: BotRightCurve
   m_TagString: Untagged
@@ -1271,11 +1320,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9040392453634252067}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2569543817623495669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9040392453634252067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ec9b695c5d42344b36c77743149cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 90
+  y: 0
+  z: -90
 --- !u!1 &9191326309105638848
 GameObject:
   m_ObjectHideFlags: 0
