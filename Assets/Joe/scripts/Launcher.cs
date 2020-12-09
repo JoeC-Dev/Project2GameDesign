@@ -44,7 +44,7 @@ public class Launcher : MonoBehaviour
         launchVector = launchPoint.transform.position;
         pinball.transform.position = launchVector;
         
-        projectileRigidbody.AddForce(transform.forward * velocityMult);
+        projectileRigidbody.AddForceAtPosition(pinball.normalized, transform.position);
         //projectileRigidbody.useGravity = true;
         aliveBall++;
     }
