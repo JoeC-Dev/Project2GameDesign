@@ -24,15 +24,16 @@ public class Launcher : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow) && aliveBall == 0 && velocityMult < 15f)
         {
             velocityMult += 5;
-            lightChanger();
+            //lightChanger();
+
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow) && aliveBall == 0 && velocityMult > 5f)
         {
             velocityMult -= 5;
-            lightChanger();
+            //lightChanger();
         }
 
-        if (Input.GetKeyDown(KeyCode.Return) && aliveBall == 0)
+        if (Input.GetKeyUp(KeyCode.Return) && aliveBall == 0)
             launchBall();
 
     }
@@ -43,19 +44,19 @@ public class Launcher : MonoBehaviour
         launchVector = launchPoint.transform.position;
         pinball.transform.position = launchVector;
         
-        projectileRigidbody.AddForce(Vector3(0,0,velocityMult));
-        projectileRigidbody.useGravity = true;
+        projectileRigidbody.AddForce(transform.forward * velocityMult);
+        //projectileRigidbody.useGravity = true;
         aliveBall++;
     }
 
     void lightChanger()
     {
-        if (velocityMult == 40f)
+        if (velocityMult == 10f)
         {
             oranLLight.SetActive(true);
             redLLight.SetActive(false);
         }
-        else if(velocityMult == 60f)
+        else if(velocityMult == 15f)
             redLLight.SetActive(true);
     }
 
