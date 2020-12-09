@@ -27,6 +27,8 @@ public class Launch : MonoBehaviour
         winScreen.enabled = false;
         loseScreen.enabled = false;
         button.SetActive(false);
+        score = 0;
+        lives = 0;
     }
 
     // Start is called before the first frame update

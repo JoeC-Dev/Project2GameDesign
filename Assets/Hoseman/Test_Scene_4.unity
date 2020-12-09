@@ -1074,7 +1074,7 @@ MonoBehaviour:
   speed: 1
   pebble: {fileID: 993624997148713336, guid: 3d1fcd6785d78f948b1e27ade508bbd9, type: 3}
   scoring: {fileID: 9191326310353496240}
-  win: 0
+  win: 3000
   pass: 0
   winScreen: {fileID: 9191326310353496239}
   loseScreen: {fileID: 9191326310353496238}
