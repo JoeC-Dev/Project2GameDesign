@@ -15,6 +15,7 @@ public class MushOnHit : MonoBehaviour
         if (other.gameObject.tag == "Pebble")
         {
             other.GetComponent<Rigidbody>().velocity = new Vector3(Random.Range(-150f, 150f), 0, Random.Range(-150f, 150f));
+            Launch.score += 50;
         }
 
     }

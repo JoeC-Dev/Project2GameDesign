@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Hoseman/StartScreen.unity
+    guid: afedc742f8b08e5449d33bb11c998a0b
+  - enabled: 1
+    path: Assets/Hoseman/Test_Scene_2.unity
+    guid: 58671ea88c9a83e4fa22b186541a7cf9
+  - enabled: 1
+    path: Assets/Hoseman/Test_Scene_3.unity
+    guid: 696cd57e3283446ef8cdcf1a0ec66f5f
+  - enabled: 1
+    path: Assets/Hoseman/Test_Scene_4.unity
+    guid: bda19f37a646b47ab92f6b51f7144f58
   m_configObjects: {}
